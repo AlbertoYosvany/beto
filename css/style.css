@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* MAQUETACIÓN */
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: burlywood;
+}
+main{
+    background-color: burlywood;
+    flex-grow: 1;
+}
+footer{
+    background-color: rgb(142, 103, 52);
+    height: 150px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+
+.nav-main{
+    background-color: rgb(80, 94, 143);
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+#check{
+    display: none;
+}
+#check-icon{
+    display: none;
+    cursor: pointer;
+}
+.logo{
+    align-self: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.menu{
+    display: flex;
+    align-self: center;
+}
+.menu li{
+    list-style: none;
+    
+}
+.menu li a{
+    text-decoration: none;
+    margin-right: 5px;
+    display: block;
+    padding: 0 0.5em;
+    color: white;
+    border-right: 1px solid rgb(10, 162, 113);
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.menu li:last-child a{
+    border-right: none;
+}
+.menu li a:hover{
+    
+    color: rgb(31, 187, 80);
+    
+}
+
+
+@media screen and (max-width:900px) {
+    .nav-main{
+        font-size: 14px;
+        position: relative;
+        flex-direction: row-reverse;
+    }
+    #check-icon{
+        display: block;
+        color: white;
+        font-size: 1.4em;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        
+        flex-direction: column;
+        width: 400px;
+        left: -400px;
+    }
+    #check:checked ~ .menu{
+        background-color: rgb(78, 79, 83);;
+        left: 0;
+        transition: all 0.5s;
+    }
+    .menu li a{
+        margin-right: 0;
+        border-right: none;
+        padding: 1em 0.5em;
+
+    }
+    .menu li a:hover{
+        border-left: 4px solid green;
+    }
+}
