@@ -1,0 +1,46 @@
+
+
+.reset{
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.reset-epson-title{
+    text-align: center;
+    padding: 1em 0 0 0;
+    font-weight: 500;
+}
+
+.reset-epson-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    justify-content: start;
+    padding: 1em;
+}
+.reset-epson-box div{
+    min-height: 250px;
+    background-color: rgba(226, 226, 226, 0.915);
+    align-self: center;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.reset-epson-box div span{
+    text-align: center;
+}
+.reset-epson-box div img{
+    text-align: center;
+    width: 100%;
+    margin: 0.5em 0;
+}
+.reset-epson-box div a{
+    
+    align-self: flex-end;
+    background-color: cadetblue;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+}

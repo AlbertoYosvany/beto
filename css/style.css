@@ -96,8 +96,8 @@ footer{
         top: 100%;
         
         flex-direction: column;
-        width: 400px;
-        left: -400px;
+        width: 200px;
+        left: -200px;
     }
     #check:checked ~ .menu{
         background-color: rgb(78, 79, 83);;
