@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95em;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://www.transparenttextures.com/patterns/30-degree-grain.png') repeat;
+}
+
+
+.carta {
+    background-color: #c9e7f2;
+    width: 450px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   
+    padding: 2em;
+    /* text-align: center; */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    line-height: 1.5;
+}
+.carta:hover {
+    transform: scale(1.05);
+}
+
+
+li {
+    margin: 10px 0;
+    padding-left: 0px;
+    position: relative;
+    list-style: none;
+}
+
+li::before {
+    content: '🤝';
+    position: relative;
+    left: -5px;
+    font-size: 20px;
+}
+
+p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
